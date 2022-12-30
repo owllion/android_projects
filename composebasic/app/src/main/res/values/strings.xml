@@ -1,0 +1,3 @@
+<resources>
+    <string name = "app_name">composebasic</string><string name = "first_title">Text composable</string><string name = "first_content">Displays text and follows Material Design guidelines.</string>
+</resources>

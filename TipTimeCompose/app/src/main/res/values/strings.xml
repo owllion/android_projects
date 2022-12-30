@@ -1,0 +1,23 @@
+<resources>
+   <string name = "app_name">TipTime</string>
+   <string name = "calculate_tip">Calculate Tip</string>
+   <string name = "bill_amount">Bill Amount</string>
+   <string name = "how_was_the_service">Tip (%)</string>
+   <string name = "round_up_tip">Round up tip?</string>
+   <string name = "tip_amount">Tip Amount: %s</string>
+   <string name = "architecture">Architecture</string>
+   <!--   Grid card practice-->
+   <string name = "crafts">Crafts</string>
+   <string name = "business">Business</string>
+   <string name = "culinary">Culinary</string>
+   <string name = "design">Design</string>
+   <string name = "fashion">Fashion</string>
+   <string name = "film">Film</string>
+   <string name = "gaming">Gaming</string>
+   <string name = "drawing">Drawing</string>
+   <string name = "lifestyle">Lifestyle</string>
+   <string name = "music">Music</string>
+   <string name = "painting">Painting</string>
+   <string name = "photography">Photography</string>
+   <string name = "tech">Tech</string>
+</resources>
