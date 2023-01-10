@@ -1,0 +1,16 @@
+<resources>
+    <string name = "app_name">fuckyou</string>
+     <string name="hero_1">Nick the Night and Day</string>
+    <string name="hero_2">Loki</string>
+    <string name="hero_3">Frankie</string>
+    <string name="hero_4">Lurran the Brave</string>
+    <string name="hero_5">Fray the Protector</string>
+    <string name="hero_6">Maru the Iron Man</string>
+
+    <string name="description1">Bothering her paw-rents</string>
+    <string name="description2">Bothering her paw-rents</string>
+    <string name="description3">Bothering her paw-rents</string>
+    <string name="description4">Bothering her paw-rents</string>
+    <string name="description5">Bothering her paw-rents</string>
+    <string name="description6">Bothering her paw-rents</string>
+</resources>
