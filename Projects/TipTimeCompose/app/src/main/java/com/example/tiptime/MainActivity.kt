@@ -75,74 +75,74 @@ fun TipTimeScreen() {
 //            text = stringResource(id = R.string.calculate_tip)
 //        )
 //        Spacer(Modifier.height(16.dp))
-//        EditNumberField(
-//            label = R.string.bill_amount,
-//            keyboardOptions = KeyboardOptions(
-//                keyboardType = KeyboardType.Number,
-//                imeAction = ImeAction.Next
-//            ),
-//            keyboardActions = KeyboardActions(
-//                //當使用者按下鍵盤上的「Next」動作按鈕時
-//                // 系統就會執行 onNext 具名參數的 lambda 運算式。
-//                onNext = {
-//                    focusManager.moveFocus(FocusDirection.Down)
-//                    //moveFocus() 函式會將焦點移往指定方向，
-//                    // 在本例中為向下移動至「Tip %」文字欄位。
-//                }
-//            ),
-//            value = amountInput,
-//            onValueChange = {amountInput = it}
-//        )
-//        EditNumberField(
-//            label = R.string.how_was_the_service,
-//            keyboardOptions = KeyboardOptions(
-//                keyboardType = KeyboardType.Number,
-//                imeAction = ImeAction.Done
-//            ),
-//            keyboardActions = KeyboardActions(
-//                onDone = {
-//                    focusManager.clearFocus()
-//                }
-//            ),
-//            value = tipInput,
-//            onValueChange = { tipInput = it}
-//        )
-//        RoundTheTipRow(
-//            roundUp = roundUp,
-//            onRoundUpChanged = {roundUp = it}
-//        )
-//        Spacer(Modifier.height(24.dp))
-//
-//        Text(
-//            text = stringResource(id = R.string.tip_amount,tip),
-//            /*
-//             * 會找到該string resource 並把%s位置填入 tip 值(動態):
-//             * <string name="tip_amount">Tip Amount: %s</string>
-//             * 透過位置格式設定，您可以在字串中顯示動態內容
-//             * (This is called positional formatting)
-//             * */
-//            modifier = Modifier.align(Alignment.CenterHorizontally),
-//            fontSize = 20.sp,
-//            fontWeight =  FontWeight.Bold
-//        )
-        TopicGrid()
+        EditNumberField(
+            label = R.string.bill_amount,
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Next
+            ),
+            keyboardActions = KeyboardActions(
+                //當使用者按下鍵盤上的「Next」動作按鈕時
+                // 系統就會執行 onNext 具名參數的 lambda 運算式。
+                onNext = {
+                    focusManager.moveFocus(FocusDirection.Down)
+                    //moveFocus() 函式會將焦點移往指定方向，
+                    // 在本例中為向下移動至「Tip %」文字欄位。
+                }
+            ),
+            value = amountInput,
+            onValueChange = {amountInput = it}
+        )
+        EditNumberField(
+            label = R.string.how_was_the_service,
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Number,
+                imeAction = ImeAction.Done
+            ),
+            keyboardActions = KeyboardActions(
+                onDone = {
+                    focusManager.clearFocus()
+                }
+            ),
+            value = tipInput,
+            onValueChange = { tipInput = it}
+        )
+        RoundTheTipRow(
+            roundUp = roundUp,
+            onRoundUpChanged = {roundUp = it}
+        )
+        Spacer(Modifier.height(24.dp))
+
+        Text(
+            text = stringResource(id = R.string.tip_amount,tip),
+            /*
+             * 會找到該string resource 並把%s位置填入 tip 值(動態):
+             * <string name="tip_amount">Tip Amount: %s</string>
+             * 透過位置格式設定，您可以在字串中顯示動態內容
+             * (This is called positional formatting)
+             * */
+            modifier = Modifier.align(Alignment.CenterHorizontally),
+            fontSize = 20.sp,
+            fontWeight =  FontWeight.Bold
+        )
+//        TopicGrid()
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
-@Composable
-fun TopicGrid(modifier: Modifier = Modifier) {
-    LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = modifier.padding(8.dp)
-    ) {
-        items(DataSource.topics) { topic ->
-            GridCard(topic)
-        }
-    }
-}
+//@OptIn(ExperimentalFoundationApi::class)
+//@Composable
+//fun TopicGrid(modifier: Modifier = Modifier) {
+//    LazyVerticalGrid(
+//        columns = GridCells.Fixed(2),
+//        verticalArrangement = Arrangement.spacedBy(8.dp),
+//        horizontalArrangement = Arrangement.spacedBy(8.dp),
+//        modifier = modifier.padding(8.dp)
+//    ) {
+//        items(DataSource.topics) { topic ->
+//            GridCard(topic)
+//        }
+//    }
+//}
 
 
 @Composable
